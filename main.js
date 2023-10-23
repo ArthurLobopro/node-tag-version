@@ -25,7 +25,7 @@ const { version } = getPackage()
 
 if (isTest) {
     console.log(version)
-    process.exit(1)
+    process.exit(0)
 }
 
 if (!isTest) {
