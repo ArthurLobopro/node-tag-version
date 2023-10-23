@@ -16,12 +16,17 @@ function getPackage() {
 
         return JSON.parse(packageContent)
     } catch (error) {
-        console.log(error)
+        console.error(error)
         process.exit(1)
     }
 }
 
 const { version } = getPackage()
+
+if (!version) {
+    console.error("No version provided in package.json")
+    process.exit(1)
+}
 
 if (isTest) {
     console.log(version)
