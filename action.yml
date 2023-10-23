@@ -1,5 +1,5 @@
 name: 'node-tag-version'
-description: 'Tags the version of '
+description: 'Tags the version of a node project.'
 author: 'Arthur Lobo'
 inputs: 
   root: 
