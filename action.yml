@@ -1,0 +1,13 @@
+name: 'node-tag-version'
+description: 'Tags the version of '
+author: 'Arthur Lobo'
+inputs: 
+  root: 
+    description: 'Root directory where is package.json'
+    default: ${{ github.workspace }}
+  test:
+    description: "Don't tag version, only log it"
+    default: 'false'
+runs:
+  using: 'node16'
+  main: 'main.js'
