@@ -1,6 +1,9 @@
 name: 'node-tag-version'
 description: 'Tags the version of a node project.'
 author: 'Arthur Lobo'
+branding:
+  icon: tag
+  color: gray-dark
 inputs: 
   root: 
     description: 'Root directory where is package.json'
